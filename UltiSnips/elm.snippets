@@ -1,0 +1,25 @@
+snippet tea "the elm architecture"
+import Html exposing (..)
+
+
+-- MODEL
+
+type alias Model = ${1:String}
+
+
+-- UPDATE
+
+type Msg = ${2:NoOp}
+
+update : Msg -> Model -> Model
+update msg model =
+  case msg of
+    ${3:NoOp} -> ${4}
+
+
+-- VIEW
+
+view : Model -> Html Msg
+view model =
+  ${5}
+endsnippet
